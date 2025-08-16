@@ -1,9 +1,13 @@
 import './App.css';
-import { SplashDemo } from '@/components/demo';
+import { SplashCursor } from '@/components/ui/splash-cursor';
+import Portfolio from '@/components/Portfolio';
 
 function App() {
   return (
-    <SplashDemo />
+    <div className="relative">
+      <SplashCursor />
+      <Portfolio />
+    </div>
   );
 }
 
