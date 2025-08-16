@@ -122,15 +122,15 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-['Inter',sans-serif]">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 text-gray-900 font-['Inter',sans-serif]">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-md border-b border-gray-100">
+      <nav className="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-md border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="text-xl font-bold text-gray-900"
+              className="text-xl font-bold text-white"
             >
               Suha Abualoul
             </motion.div>
@@ -161,7 +161,7 @@ const Portfolio = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight"
+            className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
           >
             Suha Abualoul
           </motion.h1>
@@ -169,7 +169,7 @@ const Portfolio = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto"
+            className="text-xl md:text-2xl text-white/80 mb-12 max-w-2xl mx-auto"
           >
             AI/ML Engineer | GenAI | Data Scientist
           </motion.p>
@@ -179,30 +179,16 @@ const Portfolio = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center px-8 py-4 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl"
+            className="inline-flex items-center px-8 py-4 bg-white/20 backdrop-blur-sm text-white rounded-full font-medium hover:bg-white/30 transition-colors shadow-lg hover:shadow-xl border border-white/20"
           >
             <Download className="w-5 h-5 mr-2" />
             Download Resume
           </motion.button>
         </motion.div>
-        
-        {/* Preview of About section photo */}
-        <motion.div 
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-2xl"
-        >
-          <img 
-            src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=300" 
-            alt="Suha Abualoul"
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-6">
+      <section id="about" className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
@@ -232,7 +218,7 @@ const Portfolio = () => {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-20 px-6 bg-gray-50">
+      <section id="education" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -251,7 +237,7 @@ const Portfolio = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 px-6">
+      <section id="skills" className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -282,7 +268,7 @@ const Portfolio = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-6 bg-gray-50">
+      <section id="projects" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -363,7 +349,7 @@ const Portfolio = () => {
       </section>
 
       {/* Publications Section */}
-      <section id="publications" className="py-20 px-6">
+      <section id="publications" className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -389,7 +375,7 @@ const Portfolio = () => {
       </section>
 
       {/* Certifications Section */}
-      <section id="certifications" className="py-20 px-6 bg-gray-50">
+      <section id="certifications" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -411,8 +397,12 @@ const Portfolio = () => {
                 viewport={{ once: true }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
-                <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">🏆</span>
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                  <img 
+                    src="https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                    alt="Certificate"
+                    className="w-10 h-10 object-cover rounded"
+                  />
                 </div>
                 <h3 className="font-medium text-gray-900 text-sm leading-relaxed">{cert}</h3>
               </motion.div>
@@ -422,7 +412,7 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6">
+      <section id="contact" className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -485,7 +475,7 @@ const Portfolio = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 bg-gray-900 text-white text-center">
+      <footer className="py-8 px-6 bg-gradient-to-r from-gray-800 to-gray-900 text-white text-center">
         <p className="text-sm">
           Made with 🤍 and lotssss of ☕☕☕☕
         </p>
